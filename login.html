@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>高校教务管理系统登录页面</title>
+    <link href="images/login.css" rel="stylesheet" type="text/css" />
+</head>
+<body >
+<div id="wrap">
+    <div id="header" style="text-align: center;padding-top: 50px">
+        <img src="images/logo.png">
+    </div>
+    <div id="content-wrap">
+        <div class="space"> </div>
+        <form action="deal_login.php" method="post"><div class="content">
+            <div class="field"><label>账　户：<input class="userid" name="userid" type="text"  placeholder="请输入账号" /></label></div>
+            <div class="field"><label>密　码：<input class="password" name="password" type="password" placeholder="请输入密码" /><br /></label></div>
+            <div class="field1" style="text-align: center;padding: 5px"><label><input type="radio" name="status" value="student" checked="checked">学生&nbsp;&nbsp;
+                <input type="radio" name="status" value="teacher">教师&nbsp;&nbsp;
+                <input type="radio" name="status" value="manager">管理员&nbsp;&nbsp;<br /></label></div>
+            <div class="btn">
+                <input name="login" type="submit" class="login-btn" value="" />
+            </div>
+        </div></form>
+        <div style="color: #13d0ff;font-size: 12PX;text-align: center;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;© 版权所有 计科1302</div>
+    </div>
+</div>
+</body>
+</html>

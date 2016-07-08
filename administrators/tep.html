@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>简单漂亮的后台管理界面模板 - 源码之家</title>
+<link href="../images/style.css" rel="stylesheet" type="text/css" /> 
+<script type="text/javascript" src="../javascript/jquery.min.js"></script>
+
+<style type="text/css">
+body {
+	background:#FFF
+}
+input {
+ color: #122e29;
+ border: 1px solid #005344;
+ background-color: ;
+}
+input:focus {
+ color: #ed1941;
+ border: 1px solid #2468a2;
+ background-color: ;
+}
+textarea{
+ color: #122e29;
+ border: 1px solid #005344;
+ background-color: ;
+}
+</style>
+</head>
+
+<body>
+<section class="alert">
+	<div class="green">	
+		<p><strong>请填写借用教室相关信息,都是必填项哦</strong></p>
+	
+	</div>
+</section>
+<br/>
+<br/>
+<br/>
+<form action="insert.php" method="post">
+    教学楼名称: <select name="Building_Id">
+	
+	<option value="1">主教</option>
+	<option value="2">电教</option>
+	<option value="3">科教</option>
+	<option value="4">计算机楼</option></select><span class="error">
+	<br/><br/>教室号: <input type="text" name="Classroom_Id" /><span class="error">
+	<br/><br/>
+    使用时间:
+	教学第<input type="text" name="Week" />周 周 <select name="Day">
+	
+	<option value="1">一</option>
+	<option value="2">二</option>
+	<option value="3">三</option>
+	<option value="4">四</option>
+	<option value="5">五</option>
+	<option value="6">六</option>
+	<option value="7">日</option></select><span class="error">
+	<br/><br/>
+	开始时间：<input type="time" name="Start_time" />结束时间：<input type="time" name="End_time" />
+
+
+
+	<br/><br/><br/>
+    活动简介: <textarea name="Event" rows="5" cols="40"></textarea>
+    请填写<br/><br/>
+	<input type="submit" />
+</form>
+
+
+
+
+</body>
+</html>
+
+

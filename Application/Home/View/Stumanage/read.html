@@ -1,0 +1,91 @@
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>用户中心</title>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC_/css/main.css"/>
+</head>
+<body>
+<div class="topbar-wrap white">
+    <div class="topbar-inner clearfix">
+    </div>
+</div>
+<div class="container clearfix">
+    <!--/sidebar-->
+    <div class="main-wrap">
+
+        <div class="crumb-wrap">
+            <div class="crumb-list"><i class="icon-font"> </i><a href="__URL__/../Index/main">首页 </a><span class="crumb-step">&gt;</span><span class="crumb-name">查看学生信息</span></div>
+        </div>
+        <div class="result-wrap">
+            <div class="result-content">
+                <table class="insert-tab" width="100%">
+                        <tbody><tr>
+                            <th>学生id：</th>
+                            <td width="150">{$id}</td>
+                            <th>学生姓名：</th>
+                            <td>{$name}</td>
+                        </tr>
+                            <tr>
+                                <th>学生性别：</th>
+                                <td>{$sex}</td>
+                                <th>民族：</th>
+                                <td>{$nation}</td>
+                            </tr>
+                            <tr>
+                                <th>所属学院：</th>
+                                <td>{$academy}</td>
+                                <th>所属专业：</th>
+                                <td>{$speciality}</td>
+                            </tr>
+                            <tr>
+                                <th>班级编号：</th>
+                                <td>{$class}</td>
+                                <th>所属年级:</th>
+                                <td>{$grade}</td>
+                            </tr>
+                            <tr>
+                                <th>入学时间：</th>
+                                <td>{$date}</td>
+                                <th>联系电话：</th>
+                                <td>{$phone}</td>
+                            </tr>
+                            <tr>
+                                <th>出生地：</th>
+                                <td>{$birthplace}</td>
+                                <th>生日：</th>
+                                <td>{$birthday}</td>
+                            </tr>
+                            <tr>
+                                <th>身份证号：</th>
+                                <td>{$identification}</td>
+                                <th>电子邮箱：</th>
+                                <td>{$email}</td>
+                            </tr>
+                            <tr>
+                                <th>权限id：</th>
+                                <td>{$permission}</td>
+                                <th>登陆密码：</th>
+                                <td>{$password}</td>
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <td></td>
+                                <th></th>
+                                <td>
+                                    <input class="btn btn6" onclick="history.go(-1)" value="返回" type="button">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <!--/main-->
+</div>
+</body>
+</html>

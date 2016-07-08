@@ -1,0 +1,18 @@
+[ 2016-06-11T11:33:22+08:00 ] ::1 /Educational_Administration_System/View/teachers/images/style.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Teachers
+
+[ 2016-06-11T16:00:24+08:00 ] ::1 /Educational_Administration_System/View/students/InsertQuestion.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Students
+
+[ 2016-06-11T23:45:10+08:00 ] ::1 /Educational_Administration_System/View/index.php/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000503s ]
+ERR: 无法加载模块:Login
+

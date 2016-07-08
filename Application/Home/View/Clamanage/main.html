@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>教室信息管理</title>
+<link href="__PUBLIC__/images/style.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/common.css"/>
+<link rel="stylesheet" type="text/css" href="__PUBLIC_/css/main.css"/>
+<style type="text/css">
+body {
+	background:#FFF
+}
+</style>
+</head>
+<body>
+<script>
+    function change()
+    {
+    	switch()
+    }
+</script>
+<div id="contentWrap1">
+<div class="pageTitle"></div>
+<div class="pageColumn">
+	<form method="post" action="__URL__/search" id="search">
+	按照教室号查询:&nbsp<input type="text" size="30" id="sid" name="searchid"/> 按照教学楼查询:
+	<select name = 'searchname'>
+		<option value="">=请选择=</option>
+		<option value="1">主教</option>
+		<option value="2">电教</option>
+		<option value="3">科教</option>
+		<option value="4">计算机楼</option>
+	</select>&nbsp
+	<input class="btn btn-primary btn6 mr10" type="submit" value="查询" />
+</form>
+<div style="margin-left:90%"><a href="__URL__/addclasroom"><h2><font size="3" color="green">添加教室</font></h2></a></div>
+
+		<div style="margin-left:15%">
+
+        </div>
+        <br></br>
+        <form action="__URL__/main" method="post" id='f' name='f'>
+          <div style="margin-left:90%">
+          </div>
+        </form>
+        <br></br>
+	<table>
+      <thead>
+        <th width="25%">教室编号</th>
+        <th width="25%">所在教学楼</th>
+        <th width="25%">教室容量</th>
+        <th width="25%">操作</th>
+      </thead>
+      <tbody>
+        <volist name="classroom_list" id = "vo">
+      	  <tr>
+            <td>{$vo['id']}</td>
+            <td>{$vo['name']}</td>
+            <td>{$vo['contain']}</td>
+            <td>
+              <a href="__URL__/deleteclasroom/id/{$vo['id']}/building_id/{$vo['building_id']}?userId=<?php echo $row['id'] ?>" onclick="return confirm('确定要删除吗？')">删除</a><img src="__PUBLIC__/Images/admin/icons/cross.png" alt="删除" /></a>
+            </td>
+          </tr>
+        </volist>
+      </tbody>
+  	  <tfoot>
+  		 <tr>
+  			<td clospan = "4">
+  				<div class="pagination">
+  					{$page_method}
+  				</div>
+  			</td>
+  		 </tr>
+  	  </tfoot>
+    </table>
+</div>
+</div>
+</body>
+</html>
